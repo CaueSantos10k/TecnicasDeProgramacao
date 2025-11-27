@@ -1,0 +1,30 @@
+Início
+    Definir lista_tarefas como Vazio
+
+    Função Menu_Principal()
+        Enquanto Verdadeiro Faça
+            Escreva "1. Criar, 2. Ler, 3. Atualizar, 4. Deletar, 5. Sair"
+            Leia opcao
+            
+            Se opcao == 1 Então Chamar Criar_Tarefa()
+            Se opcao == 2 Então Chamar Ler_Tarefas()
+            Se opcao == 3 Então Chamar Atualizar_Tarefa()
+            Se opcao == 4 Então Chamar Deletar_Tarefa()
+            Se opcao == 5 Então Pare
+        Fim Enquanto
+    Fim Função
+
+    Função Criar_Tarefa()
+        Escreva "Digite a tarefa:"
+        Leia nova_tarefa
+        Adicionar nova_tarefa em lista_tarefas
+    Fim Função
+
+    Função Ler_Tarefas()
+        Para cada tarefa em lista_tarefas Faça
+            Escreva tarefa
+        Fim Para
+    Fim Função
+    
+    // (Lógica similar para Atualizar e Deletar)
+Fim
